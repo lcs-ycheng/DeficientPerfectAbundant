@@ -49,7 +49,25 @@ while 1 == 1 {
 //PROCESS
 print(validInput)
 
+//Test the number is divisor or not
+var sum = 1
 
+for i in 2...validInput - 1 {
+    if validInput % i == 0 {
+        //means that i is the divisor of the number
+        sum += i
+    }
+}
+print(sum)
+
+//check the sum is abundant, perfect or dificent
+if sum < validInput {
+    print("deficient")
+}else if sum > validInput {
+    print("abundant")
+}else if sum == validInput {
+    print("perfect")
+}
 
 //// Get the user input
 //guard (givenInput) = readLine() else {
