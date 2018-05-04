@@ -16,7 +16,7 @@ var validInput = 0
 while 1 == 1 {
     
     //*
-    //test #1: Wait for input AND at the same time, ensure input is not nil
+    //test #1:  g
     guard let givenInput = readLine()else {
         //If we got inside this structure, we have nil input
         //So, we should not do any more test
@@ -51,12 +51,16 @@ print(validInput)
 
 //Test the number is divisor or not
 var sum = 1
-
+if validInput > 1 {
 for i in 2...validInput - 1 {
     if validInput % i == 0 {
         //means that i is the divisor of the number
         sum += i
     }
+}
+    //if the number is 1
+} else {
+    sum = 0
 }
 print(sum)
 
